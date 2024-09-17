@@ -1,0 +1,98 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="card">
+        <div class="card-body">
+
+          <div class="d-flex justify-content-around ">
+            <h6><b>Add Teacher</b></h6>
+
+          </div>
+          <form [formGroup]="addTeacherForm" class="form-horizontal">
+            <div class="form-group">
+              <label for="name">Teacher Name</label>
+              <input id="name" type="text" placeholder="name" formControlName="name"
+                     class="form-control no-border-input"
+                     name="name" required autofocus/>
+              <span *ngIf="submitted || form['name'].touched || form['name'].dirty && form['name'].invalid"
+                    class="info-msg text-danger">
+              <small
+                *ngIf="form['name'].errors && form['name'].errors?.['required']">Classroom  name is the required.</small>
+              <small *ngIf="form['name'].errors && form['name'].errors?.['minlength']">Classroom name should have at least 4 characters.</small>
+            </span>
+            </div>
+            <div class="form-group">
+              <label for="faculty">Faculty</label>
+              <input id="faculty" type="text" placeholder="faculty" formControlName="faculty"
+                     class="form-control no-border-input"
+                     name="faculty" required autofocus/>
+              <span *ngIf="submitted || form['faculty'].touched || form['faculty'].dirty && form['faculty'].invalid"
+                    class="info-msg text-danger">
+              <small
+                *ngIf="form['faculty'].errors && form['faculty'].errors?.['required']">Faculty  name is the required.</small>
+              <small *ngIf="form['faculty'].errors && form['faculty'].errors?.['minlength']">Faculty name should have at least 4 characters.</small>
+            </span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input id="subject" type="text" placeholder="Subject" formControlName="subject"
+                     class="form-control no-border-input"
+                     name="subject" required autofocus/>
+<!--              <span *ngIf="submitted || form['subject'].touched || form['subject'].dirty && form['section'].invalid"-->
+<!--                    class="info-msg text-danger">-->
+<!--              <small-->
+<!--                *ngIf="form['subject'].errors && form['subject'].errors?.['required']">Subject  is the required.</small>-->
+<!--              <small *ngIf="form['subject'].errors && form['subject'].errors?.['minlength']">Subject  should have characters.</small>-->
+<!--            </span>-->
+            </div>
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number</label>
+              <input id="phoneNumber" type="text" placeholder="phoneNumber" formControlName="phoneNumber"
+                     class="form-control no-border-input"
+                     name="phoneNumber" required autofocus/>
+              <span
+                *ngIf="submitted || form['phoneNumber'].touched || form['phoneNumber'].dirty && form['phoneNumber'].invalid"
+                class="info-msg text-danger">
+              <small
+                *ngIf="form['phoneNumber'].errors && form['phoneNumber'].errors?.['required']">Class Teacher  name is the required.</small>
+              <small *ngIf="form['phoneNumber'].errors && form['phoneNumber'].errors?.['minlength']"> Class Teacher should have at least 4 characters.</small>
+            </span>
+            </div>
+            <div class="form-group">
+              <label for="address">Address</label>
+              <input id="address" type="text" placeholder="address" formControlName="address"
+                     class="form-control no-border-input"
+                     name="address" required autofocus/>
+              <span *ngIf="submitted || form['address'].touched || form['address'].dirty && form['address'].invalid"
+                    class="info-msg text-danger">
+              <small
+                *ngIf="form['address'].errors && form['address'].errors?.['required']"> Teacher address   is the required.</small>
+              <small *ngIf="form['address'].errors && form['address'].errors?.['minlength']">  Teacher address should have at least 4 characters.</small>
+            </span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" type="text" placeholder="email" formControlName="email"
+                     class="form-control no-border-input"
+                     name="email" required autofocus/>
+              <span *ngIf="submitted || form['email'].touched || form['email'].dirty && form['email'].invalid"
+                    class="info-msg text-danger">
+              <small
+                *ngIf="form['email'].errors && form['email'].errors?.['required']">Email is required.</small>
+              <small *ngIf="form['email'].errors && form['email'].errors?.['minlength']">Email should have should have at least 4 characters.</small>
+            </span>
+            </div>
+
+
+            <div class="row form-group">
+
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary" (click)="addTeacher()">Add Teacher</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

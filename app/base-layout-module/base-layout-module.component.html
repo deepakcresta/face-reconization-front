@@ -1,0 +1,19 @@
+<div id="container" [ngClass]="{sidebarActive: sidebarActive}">
+<app-side-bar></app-side-bar>
+  <div id="contentContainer">
+    <app-header
+      (toggleSidebar)="sidebarActive = sidebarActive"
+      [sidebarActive]="sidebarActive">
+    </app-header>
+    <div id="content">
+      <div class="card shadow p-3 mb-5 bg rounded ">
+        <div class=" card-body">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+    <div>
+      <app-footer></app-footer>
+    </div>
+  </div>
+</div>

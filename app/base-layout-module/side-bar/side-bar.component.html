@@ -1,0 +1,60 @@
+<div class="header-box px-2 d-flex justify-content-between">
+  <div class="ms-5 mt-2" [routerLink]="'/features/home'">
+
+    <div class="d-flex justify-content-center">
+      <img src="assets/images/logo.png" alt="Example Image" style="height: 30px;width: 30px;">
+    </div>
+    <div class="d-flex  ">
+      <h6><b> IBA System </b></h6>
+    </div>
+  </div>
+  <button class="btn d-md-none d-block close close-btn px-1 py-0 text-white">
+    <i class="fal fa-stream"></i>
+  </button>
+</div>
+
+<ul class=" text-black list-unstyled px-2">
+  <li class="active text-black " [routerLink]="'/features/home'"><a href="javascript:void(0);" class=" text-secondary text-decoration-none px-4 py-2 d-block">
+    <i class="fa fa-dashboard" style="font-size:20px"></i> Dashboard</a></li>
+
+  <li class="text-black" [routerLink]="'/features/add-teacher'"><a href="javascript:void(0);" class="text-secondary text-decoration-none px-4 py-2 d-block">
+    <i class="fa fa-exchange" style="font-size:24px"></i>Add Teaches</a></li>
+
+  <li class="text-black" [routerLink]="'/features/teacher-list'"><a href="javascript:void(0);" class="text-secondary text-decoration-none px-4 py-2 d-block">
+    <i class="fa fa-exchange" style="font-size:24px"></i>Available Teaches</a></li>
+
+  <li class="" [routerLink]="'/features/add-student'"><a href="javascript:void(0);" class=" text-secondary text-decoration-none px-4 py-2 d-block">
+    <i class="fa fa-database" style="font-size:24px;color: green"></i>  Add Students</a></li>
+
+  <li class="" [routerLink]="'/features/add-classroom'"><a href="javascript:void(0);" class="text-secondary text-decoration-none px-4 py-2 d-block">
+    <i class="fa fa-database" style="font-size:24px;color:cornflowerblue"></i> Add Classroom</a></li>
+
+  <li class="" [routerLink]="'/features/classroom-list'"><a href="javascript:void(0);" class="text-secondary text-decoration-none px-4 py-2 d-block">
+    <i class="fa fa-database" style="font-size:24px;color:cornflowerblue"></i>Available Classroom</a></li>
+
+  <li class="" [routerLink]="'/features/student-attendance'"><a href="javascript:void(0);" class="text-secondary text-decoration-none px-4 py-2 d-block">
+    <i class="fa fa-database" style="font-size:24px; color:red"></i>Student Attendance</a></li>
+    <li class="" [routerLink]="'/features/today-attendance'"><a href="javascript:void(0);" class="text-secondary text-decoration-none px-4 py-2 d-block">
+    <i class="fa fa-database" style="font-size:24px; color:red"></i>Today Attendance</a></li>
+
+  <li class="" [routerLink]="'/features/arima-algorithm'"><a href="javascript:void(0);" class="text-secondary text-decoration-none px-4 py-2 d-block">
+    <i class="fa fa-contact-book" style="font-size:24px"></i> Arima Algorithm</a></li>
+  <li class="" [routerLink]="'/features/contact-us'"><a href="javascript:void(0);" class="text-secondary text-decoration-none px-4 py-2 d-block">
+    <i class="fa fa-contact-book" style="font-size:24px"></i>  Contact Us</a></li>
+
+  <li class=" mt-2" [routerLink]="'/auth/usr-login'"><a href="javascript:void(0);" class="text-secondary text-decoration-none px-4 py-2 d-block">
+    <i class="fa fa-users" style="font-size:24px"></i>  Log Out</a></li>
+
+
+
+  <!--  <div class="dropdown" [class.show]="isDropdownOpen">-->
+  <!--    <button class="btn btn-primary dropdown-toggle" type="button" (click)="toggleDropdown()">-->
+  <!--      Dropdown-->
+  <!--    </button>-->
+  <!--    <div class="dropdown-menu">-->
+  <!--      <a class="dropdown-item" href="#">Item 1</a>-->
+  <!--      <a class="dropdown-item" href="#">Item 2</a>-->
+  <!--      <a class="dropdown-item" href="#">Item 3</a>-->
+  <!--    </div>-->
+  <!--  </div>-->
+</ul>

@@ -1,0 +1,86 @@
+<div class="content-header">
+  <div class="container-fluid">
+    <div class="row mb-2">
+      <div class="col-sm-6">
+        <h3 class="m-0 text-dark">Dashboard</h3>
+      </div>
+      <!-- /.col -->
+      <div class="col-sm-6">
+        <ol class="breadcrumb float-sm-right">
+          <li class="breadcrumb-item">Home</li>
+          <li class="breadcrumb-item active">Dashboard v1</li>
+        </ol>
+      </div>
+      <!-- /.col -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container-fluid -->
+</div>
+<!-- /.content-header -->
+<!-- Main content -->
+<section class="content">
+  <div class="container-fluid">
+    <!-- Small boxes (Stat box) -->
+    <div class="row">
+      <div class="ms-5 col-sm-3">
+        <div class=" card bg-secondary text-white h-215 text-center">
+          <div class="card-block">
+            <br><br>
+            <h4 class="card-title" [routerLink]="'/features/student-attendance/'">Total Students</h4>
+
+          </div>
+
+        </div>
+      </div>
+      <div class="ms-4 ms-4 col-sm-3">
+        <div class=" card bg-secondary text-white h-215 text-center">
+          <div class="card-block">
+            <br><br>
+            <h4 class="card-title" [routerLink]="'/features/teacher-list'">Total Teachers</h4>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="ms-4  col-sm-3">
+        <div class=" card bg-secondary text-white h-215 text-center">
+          <div class="card-block">
+            <br>
+            <br>
+            <h4 class="card-title" [routerLink]="'/features/classroom-list'">Total Classroom</h4>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 ms-5 mt-3 py-2 text-center">
+        <div class=" card bg-secondary text-white h-215 text-center">
+          <div class="card-block">
+            <br><br>
+            <h4 class="card-title" [routerLink]="'/features/student-attendance'">Students Records </h4>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 ms-4 mt-3">
+        <div class=" card bg-secondary text-white h-251 text-center">
+          <div class="card-block">
+            <br><br>
+            <h4 class="card-title" [routerLink]="'/features/today-attendance'">Total Present</h4>
+            <br>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3  ms-4 mt-3">
+        <div class=" card bg-secondary text-white h-2150 text-center">
+          <div class="card-block">
+            <br><br>
+            <h4 class="card-title" [routerLink]="'/features/student-attendance'">Total Absent</h4>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
