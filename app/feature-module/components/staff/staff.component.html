@@ -1,0 +1,40 @@
+<div class="container">
+  <h2>Upload Student Image</h2>
+
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="image">Select Image</label>
+      <input type="file" id="image" (change)="onImageChange($event)" class="form-control-file" />
+      <div *ngIf="imagePreview" class="mt-3">
+        <img [src]="imagePreview" alt="Image Preview" class="img-thumbnail" style="max-width: 200px;" />
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Upload Image</button>
+  </form>
+
+  <h2 class="mt-5">Uploaded Images</h2>
+  <table class="table table-bordered mt-3">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>name</th>
+      <th>Image</th>
+      <th>Present Status</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let image of images">
+      {{ image.id? image.id:'N/A' }}
+      <td>{{ image.id? image.id:'N/A' }}</td>
+      <td>{{ image.name? image.name:'N/A' }}</td>
+      <td>{{ image.path? image.path:'N/A' }}</td>
+      <td>{{ image.id }}</td>
+
+
+        <img [src]="image.url" alt="Image" class="img-thumbnail" style="max-width: 100px;" />
+      <td>{{ image.presentStatus }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

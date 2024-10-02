@@ -10,6 +10,7 @@ import {AttendanceRecordComponent} from "./components/attendance/attendance-reco
 import {AvailableClassroomComponent} from "./components/classroom/available-classroom/available-classroom.component";
 import {AvailableTeacherComponent} from "./components/teacher/available-teacher/available-teacher.component";
 import {TodayAttendanceComponent} from "./components/attendance/today-attendance/today-attendance.component";
+import {StaffComponent} from "./components/staff/staff.component";
 
 const routes: Routes = [
   {
@@ -47,6 +48,9 @@ const routes: Routes = [
       {
         path: 'today-attendance',
         component: TodayAttendanceComponent
+      },  {
+        path: 'add-staff',
+        component: StaffComponent
       },
     ]
   },

@@ -54,10 +54,10 @@ export class AddTeacherComponent implements OnInit {
           this.addTeacherForm.reset();
           console.log("User Login Successful")
           // this.toastService.success("Login","login success full")
-          this.router.navigate(['/features/add-teachers']);
+          this.router.navigate(['/features/teacher-list']);
         }, error: (err: any) => {
           // this.toastService.error("user error", 'Error on the Logging the customers')
-          this.router.navigate(['/features/add-teachers']);
+          this.router.navigate(['/features/teacher-list']);
         }
       });
   }
