@@ -64,7 +64,7 @@ export class StaffComponent implements OnInit {
       }
     });
   }
-
+  //
   loadImages(): void {
     this.staffService.getAllImages().subscribe(
       (data: any[]) => { // Using any type here
@@ -76,5 +76,29 @@ export class StaffComponent implements OnInit {
       }
     );
   }
+  // loadImages(): void {
+  //   this.staffService.getAllImages().subscribe(
+  //     (data: any[]) => { // Assuming the service returns an array of image objects
+  //       console.log('data', data);
+  //       // Assuming the response data contains paths relative to the uploads/images directory
+  //       const baseUrl = 'http://localhost:8082/uploads/images/'; // Adjust if your server runs on a different port or address
+  //
+  //       this.images = data.map(image => ({
+  //         ...image,
+  //         url: baseUrl + image.name // Construct the full URL for each image
+  //       }));
+  //     },
+  //     (error) => {
+  //       console.error('Error fetching images', error);
+  //     }
+  //   );
+  // }
+
+  replaceBackslashWithForwardSlash(input: string): string {
+    return input.replace(/\\/g, '/');
+  }
+
+
+
 
 }

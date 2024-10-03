@@ -18,7 +18,6 @@
     <thead>
     <tr>
       <th>ID</th>
-      <th>name</th>
       <th>Image</th>
       <th>Present Status</th>
     </tr>
@@ -26,13 +25,9 @@
     <tbody>
     <tr *ngFor="let image of images">
       {{ image.id? image.id:'N/A' }}
-      <td>{{ image.id? image.id:'N/A' }}</td>
-      <td>{{ image.name? image.name:'N/A' }}</td>
-      <td>{{ image.path? image.path:'N/A' }}</td>
-      <td>{{ image.id }}</td>
-
-
-        <img [src]="image.url" alt="Image" class="img-thumbnail" style="max-width: 100px;" />
+     <td>
+      <img [src]="'http://localhost:8082/api/images/view?imagePath=' + replaceBackslashWithForwardSlash(image.path)" alt="Image" class="img-thumbnail" style="max-width: 200px;" />
+     </td>
       <td>{{ image.presentStatus }}</td>
     </tr>
     </tbody>
